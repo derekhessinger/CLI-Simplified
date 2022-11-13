@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>What is the Command Line?</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/> 
   </head>
   <body>
     <div class="typewriter">
@@ -89,11 +92,18 @@
     <h2>Try it for yourself. Find what directory you are in, what files there are, and how to get to the next one.</h2>
 
     <p>Hint: "pwd" will tell you where you are, "dir" will let you know what's in your directory, and cd will take you to the next directory.</p>
-
-    <textarea id="terminal" style="background-color: black;color: green;" row="5"></textarea>
-
-    <div id="like_button_container">
-    </div>
+    
+    <!-- Where terminal begins -->
+    <script>
+      $('body').terminal({
+          hello: function(what) {
+              this.echo('Hello, ' + what +
+                        '. Wellcome to this terminal.');
+          }
+      }, {
+          greetings: 'My First Web Terminal'
+      });
+      </script>
 
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
