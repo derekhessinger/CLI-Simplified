@@ -32,19 +32,63 @@
     <h2> Commands to know </h2>
 
     <ul>
-      <li> cd </li>
-      <li> ls/dir </li>
-      <li> clear/cls </li>
-      <li> touch/echo </li>
-      <li> mkdir  </li>
-      <li> mv </li>
-      <li> nano </li>
-      <li> PATH </li>
       <li> pwd </li>
+        <ul>
+          <li>"pwd" stands for present working directory</li>
+          <li>This lets the user know where they currently are operating in the command line</li>
+        </ul>
+      <li> ls/dir </li>
+        <ul>
+          <li>"ls" and "dir" list all of the files within the current directory the user is in</li>
+          <li>When operating with prompt command prompt use "dir", and when operating with terminal use "ls"</li>
+        </ul>
+      <li> cd </li>
+        <ul>
+            <li>"cd" stands for change directory</li>
+            <li>This allows for the user to move between folders and directories</li>
+        </ul>
+      <li> clear/cls </li>
+        <ul>
+          <li>"clear" and "cls" are used to clear the previous entries into the command line/terminal from the textbox</li>
+          <li>This makes visualizing outputs much simplier, and can help clean up the screen if the text gets too messy</li>
+          <li>When using terminal, use "clear", and when using command prompt, use "cls"</li>
+        </ul>
+      <li> mkdir</li>
+        <ul>
+            <li>"mkdir" stands for make directory</li>
+            <li>This command allows us to easy create new folders/directories</li>
+            <li>To use this command, type "mkdir" followed by a space and the name you want for your directory</li>
+        </ul>
+      <li> touch/echo </li>
+        <ul>
+            <li>"touch" and "echo" are commands that allow us to make files from the command line</li>
+            <li>touch is for the terminal, and to use this command, type "touch" folloed by a space and the name you want for you file, but be sure to include the file type at the end (ex. "myFile.txt")</li>
+            <li>echo is a command that prints whatever you type after it, but by using the ">" operator with a file name, the user can "echo" a new file</li>
+              <ul>
+                  <li>ex. "echo > myFile.txt"</li>
+              </ul>
+        </ul>
       <li> rm </li>
+        <ul>
+            <li>"rm" stands for remove, and allows the user to remove files</li>
+            <li>to use the rm command, type "rm" followed by a space and the file you would like removed</li>
+                <ul>
+                  <li>ex. "rm myFile.txt"</li>
+                </ul>
+        </ul>
+      <li> mv </li>
+        <ul>
+          <li>"mv" stands for move, and allows us to move a file to another location</li>
+          <li>To use the mv command, type "mv" followed by a space and the file you want moved and the path to the new location</li>
+              <ul>
+                <li>ex. "mv myFile.txt" /Users/name/Desktop</li>
+              </ul>
+        </ul>
     </ul>
 
     <h2>Try it for yourself. Find what directory you are in, what files there are, and how to get to the next one.</h2>
+
+    <p>Hint: "pwd" will tell you where you are, "dir" will let you know what's in your directory, and cd will take you to the next directory.</p>
 
     <textarea id="terminal" style="background-color: black;color: green;" row="5"></textarea>
 
