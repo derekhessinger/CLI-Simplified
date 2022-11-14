@@ -21,9 +21,21 @@ strong {
     color: rgb(180, 180, 180);
 }
 
+.terminalJ {
+  display: inline-flex; 
+  margin: 0 auto; 
+  justify-content: center;
+}
+
+.termscript {
+  margin: 0 auto; 
+}
+
 div.typewriter {
     display: inline-flex; 
 }
+
+
 
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */

@@ -10,9 +10,11 @@
   </head>
   <body>
     <div class="typewriter">
-      <h1>> The Command Line - Simplified</h1>
+      <h1>> Page 1</h1>
     </div>
     
+    <!-- <img src="cli.gif" alt="The Firefox logo: a flaming fox surrounding the Earth."> -->
+
     <h2>What is the command line? </h2>
 
     <p>The command line is a user interface to used to navigate and interact with the computer</p>
@@ -91,8 +93,38 @@
 
     <p>Hint: "pwd" will tell you where you are, "dir" will let you know what's in your directory, and cd will take you to the next directory.</p>
     
-    <div id="terminal"></div>
-    <script src="script.js"></script>
-    
+    <!-- Where terminal begins -->
+    <div class="terminalJ">
+      <script class="termScript">
+        $('body').terminal({
+            hello: function(what) {
+                this.echo('Hello, ' + what +
+                          '. Welcome to this terminal.');
+            }
+            ,ls: function(){
+                this.echo('myFile.txt');
+            }
+            ,pwd: function(){
+                this.echo('/Users/Documents');
+            }
+            ,touch: function(file){
+                this.echo('myFile.txt ' + file);
+            }
+            ,
+        }, {
+            greetings: 'Try out the terminal!'
+        });
+      </script>
+    </div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="textinput.js"></script>
+
+
   </body>
 </html>
