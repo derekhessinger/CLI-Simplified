@@ -4,95 +4,74 @@
     <meta charset="utf-8">
     <title>What is the Command Line?</title>
     <link rel="stylesheet" href="styles.css" />
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
     <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/> 
+
   </head>
   <body>
     <div class="typewriter">
       <h1>> The Command Line - Simplified</h1>
     </div>
     
-    <h2>What is the command line? </h2>
+    <h2>What is the Command Line? </h2>
 
-    <p>The command line is a user interface to used to navigate and interact with the computer</p>
-
-    <ul>
-      <li> The command line accepts prompts or commands from the user </li>
-      <li> On mac and linux, the command line is the same as the terminal </li>
-    </ul>
+    <p>The command line (or terminal - they're essentially the same thing), is a text interface to used to interact and run programs on your computer.
+      This website will introduce you to the basics of command line interface (CLI) tools and how to use them effectively. </p>
 
     <h2> What does it do? </h2>
 
-    <p> It is very similar to a GUI (graphical user interface), like the file explorer, except instead of using your mouse to perform actions, you use commands </p>
+    <p>Most people are familiar with interacting with a computer through a graphical user interface (those buttons you click to run programs).
+      The command line provides an alternative to this, allowing you to run programs and a large number of tools straight from a terminal! 
+      <br><br>
+      As a new programmer, you'll undoubtedly run into programs that require you to run commands from the terminal. 
+      Even if you don't, some people find it much faster to do everything via a command line and bypass the use of a mouse entirely.  </p>
+
+    <h2> Let's Get Started! </h2>
+
+    <h3> Accessing the Command Line</h3>
+
+    <h4> On MacOS/Linux/Unix</h4>
+
+    <p>A terminal will be available by default as an application.</p>
+
+    <h4> On Windows</h4>
+
+    <p>It's a tiny bit harder on Windows. There is a program called cmd, but it won't play with many of the Unix commands we will be using.
+      To use them, we recommend <a href = https://learn.microsoft.com/en-us/powershell/">PowerShell</a> or <a href = "https://gitforwindows.org">Gitbash</a>.  
+    </p>
+
+    <h3> Basic Navigation</h3>
+
+    <p>There are a few basic built-in commands that you need to know to navigate the command line. The most important three for navigation: </p>
 
     <ul>
-      <li> This allows for quicker access, more efficiency, and more elaborate commands to be performed </li>
+      <li>pwd - find out where exactly you are in your directory</li>
+      <li>ls - list the files available in the current directory </li>
+      <li>cd - move directories. This one is a little different - you need to specifiy a path of where to go. For example, to get to file x:</li>
+        <ul>
+          <li>  cd x</li>
+        </ul>
+
     </ul>
 
-    <h2> Commands to know </h2>
 
-    <ul>
-      <li> pwd </li>
-        <ul>
-          <li>"pwd" stands for present working directory</li>
-          <li>This lets the user know where they currently are operating in the command line</li>
-        </ul>
-      <li> ls/dir </li>
-        <ul>
-          <li>"ls" and "dir" list all of the files within the current directory the user is in</li>
-          <li>When operating with prompt command prompt use "dir", and when operating with terminal use "ls"</li>
-        </ul>
-      <li> cd </li>
-        <ul>
-            <li>"cd" stands for change directory</li>
-            <li>This allows for the user to move between folders and directories</li>
-        </ul>
-      <li> clear/cls </li>
-        <ul>
-          <li>"clear" and "cls" are used to clear the previous entries into the command line/terminal from the textbox</li>
-          <li>This makes visualizing outputs much simplier, and can help clean up the screen if the text gets too messy</li>
-          <li>When using terminal, use "clear", and when using command prompt, use "cls"</li>
-        </ul>
-      <li> mkdir</li>
-        <ul>
-            <li>"mkdir" stands for make directory</li>
-            <li>This command allows us to easy create new folders/directories</li>
-            <li>To use this command, type "mkdir" followed by a space and the name you want for your directory</li>
-        </ul>
-      <li> touch/echo </li>
-        <ul>
-            <li>"touch" and "echo" are commands that allow us to make files from the command line</li>
-            <li>touch is for the terminal, and to use this command, type "touch" folloed by a space and the name you want for you file, but be sure to include the file type at the end (ex. "myFile.txt")</li>
-            <li>echo is a command that prints whatever you type after it, but by using the ">" operator with a file name, the user can "echo" a new file</li>
-              <ul>
-                  <li>ex. "echo > myFile.txt"</li>
-              </ul>
-        </ul>
-      <li> rm </li>
-        <ul>
-            <li>"rm" stands for remove, and allows the user to remove files</li>
-            <li>to use the rm command, type "rm" followed by a space and the file you would like removed</li>
-                <ul>
-                  <li>ex. "rm myFile.txt"</li>
-                </ul>
-        </ul>
-      <li> mv </li>
-        <ul>
-          <li>"mv" stands for move, and allows us to move a file to another location</li>
-          <li>To use the mv command, type "mv" followed by a space and the file you want moved and the path to the new location</li>
-              <ul>
-                <li>ex. "mv myFile.txt" /Users/name/Desktop</li>
-              </ul>
-        </ul>
-    </ul>
+    <h2>Try it for yourself!</h2>
 
-    <h2>Try it for yourself. Find what directory you are in, what files there are, and how to get to the next one.</h2>
-
-    <p>Hint: "pwd" will tell you where you are, "dir" will let you know what's in your directory, and cd will take you to the next directory.</p>
+    <p>Hint: use the three commands above! Orient yourself, find out what paths you have, and then move.</p>
     
     <div id="terminal"></div>
     <script src="script.js"></script>
-    
+    <br><br>
   </body>
+  <footer>
+    <hr>
+    <h4>Made by Narit Trikasemsak and Derek Hessinger for HackHolyoke 2022. </h4>
+    <a href="https://github.com/narittt/CLI-Simplified">Github Repository</a>
+    <p>Special thanks to Jakub T. Jankiewicz, who created <a href="https://terminal.jcubic.pl">jQuery Terminal</a></p>
+  </footer>
+
 </html>
