@@ -9,4 +9,4 @@ A simple way for beginners to learn how to use the command line. Has a built-in 
 
 ## and the terminal!
 
-![image](https://user-images.githubusercontent.com/62463944/221380750-2661163a-714d-4640-9362-bb739a2a0da6.png)
+![image](https://user-images.githubusercontent.com/62463944/221380824-b70e845b-bde0-4c0b-bf7e-e64d5dafa5c8.png)
